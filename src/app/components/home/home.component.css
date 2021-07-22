@@ -1,0 +1,28 @@
+h1 {
+    color: #333;
+    font-size: 2.5rem;
+  }
+  h2, h3 {
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: #333;
+  }
+#start {
+    font-family: 'Roboto Slab', serif;
+    font-size: 80px;
+    padding: 20% 10px 0px 10px;
+}
+
+#start-sub {
+    font-size: 30px;
+}
+  #openpage {
+    background-color: rgb(226, 222, 209);
+  }
+  .binoculars {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }

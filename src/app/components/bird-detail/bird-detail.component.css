@@ -1,0 +1,41 @@
+h2 {
+  font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: #333;
+    text-align: center;
+    padding: 10% 10px 10px 10px;
+}
+
+.form {
+  margin: 3% auto;
+  text-align: center;
+}
+label {
+    color: #3d3d3d;
+    font-weight: bold;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+  }
+  input {
+    font-size: 17px;
+    padding: 5px;
+  }
+  button {
+    margin-top: 20px;
+    background-color: rgb(226, 222, 209);
+    padding: 15px;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: 'Roboto Slab', serif;
+    color: #3d3d3d;
+  }
+  button:hover {
+    color: white;
+    background-color: #d84a4a;
+  }
+  button:disabled {
+    background-color: #eee;
+    color: #ccc;
+    cursor: auto;
+  }

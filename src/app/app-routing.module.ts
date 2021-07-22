@@ -1,10 +1,21 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-const routes: Routes = [];
+import { MainComponent } from './components/main/main.component';
+import { BirdsComponent } from './components/birds/birds.component';
+import { BirdDetailComponent } from './components/bird-detail/bird-detail.component';
+import { HomeComponent } from './components/home/home.component';
+
+const routes: Routes = [
+  { path: '', redirectTo: '/bigyear', pathMatch: 'full' },
+  { path: 'bigyear', component: HomeComponent},
+  { path: 'main', component: MainComponent },
+  { path: 'bird-detail/:id', component: BirdDetailComponent },
+  { path: 'birds', component: BirdsComponent }
+];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  imports: [ RouterModule.forRoot(routes) ],
+  exports: [ RouterModule ]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

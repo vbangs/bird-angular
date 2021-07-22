@@ -1,0 +1,48 @@
+h2 {
+  font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: #333;
+    text-align: center;
+    padding: 10% 10px 10px 10px;
+}
+
+.birds {
+    margin: auto auto;
+    list-style-type: none;
+    padding: 0;
+    width: 50%;
+    max-width: 400px;
+  }
+  .birds li {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .birds li:hover {
+    left: .1em;
+  }
+  
+  .birds a {
+    color: #fff;
+    text-decoration: none;
+    background-color: #d84a4a;
+    margin: .5em;
+    height: 2em;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  .birds a:hover {
+    color: #fff;
+    background-color: #913636;
+  }
+  
+  .birds a:active {
+    background-color: #525252;
+    color: #fafafa;
+  }

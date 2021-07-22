@@ -1,0 +1,6 @@
+<h2>recent sightings</h2>
+<div class="menu">
+  <a *ngFor="let bird of birds"
+  routerLink="/bird-detail/{{bird.id}}">
+    {{bird.name}}</a>
+</div>

@@ -1,0 +1,18 @@
+<div *ngIf="bird">
+  <h2>{{bird.name | lowercase}}</h2>  
+  <div class="form">
+      <label for="bird-name"></label>
+      <input id="bird-name" [(ngModel)]="bird.name" placeholder="Bird"/>
+      <br /><br />
+      <label for="bird-type"></label>
+      <input id="bird-type" [(ngModel)]="bird.birdtype" placeholder="Type"/>
+      <br /><br />
+      <label for="bird-location"></label>
+      <input id="bird-location" [(ngModel)]="bird.location" placeholder="Location"/>
+      <br /><br />
+      <label for="bird-date"></label>
+      <input id="bird-date" [(ngModel)]="bird.date" placeholder="Date"/>
+      <br />
+    </div>
+    <button (click)="goBack()">Back</button>
+  </div>
