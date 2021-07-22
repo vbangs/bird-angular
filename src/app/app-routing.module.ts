@@ -14,7 +14,7 @@ const routes: Routes = [
   { path: 'main', component: MainComponent },
   { path: 'bird-detail/:id', component: BirdDetailComponent },
   { path: 'birds', component: BirdsComponent },
-  { path: 'addbird', component: BirdFormComponent }
+  { path: 'add-bird', component: BirdFormComponent }
 ];
 
 @NgModule({

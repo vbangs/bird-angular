@@ -1,37 +1,47 @@
+<h2>add bird</h2>
+
 <div class="container">
   <div [hidden]="submitted">
     <form (ngSubmit)="onSubmit()" #birdForm="ngForm">
       <div class="form-group">
-        <label for="name">bird</label>
         <input type="text" class="form-control" id="name" placeholder="ex: American Widgeon"
                required
                [(ngModel)]="model.name" name="name"
                #name="ngModel">
-        <div [hidden]="name.valid || name.pristine"
-             class="alert alert-danger">
-          Bird is required
-        </div>
       </div>
 
       <div class="form-group">
-        <label for="birdtype">type</label>
+        <!-- <label for="birdtype">type</label> -->
         <select class="form-control" id="birdtype" placeholder="type"
                 required
                 [(ngModel)]="model.birdtype" name="birdtype"
                 #type="ngModel">
-          <option *ngFor="let bird of birdtype" [value]="bird">{{bird}}</option>
+            <option value="" disabled selected>Select Type</option>
+            <option>Chicken-Like Marsh Birds</option>
+            <option>Duck-Like Birds</option>
+            <option>Gull-Like Birds</option>
+            <option>Hawk-Like Birds</option>
+            <option>Hummingbirds</option>
+            <option>Long-Legged Waders</option>
+            <option>Owls</option>
+            <option>Perching Birds</option>
+            <option>Pigeon-Like Birds</option>
+            <option>Sandpiper-Like Birds</option>
+            <option>Swallow-Like Birds</option>
+            <option>Tree-Clinging Birds</option>
+            <option>Upland Ground Birds</option>
+            <option>Upright-Perching Water Birds</option>
+            <!-- <option *ngFor="let bird of birdtype" [value]="bird">{{bird}}</option> -->
         </select>
       </div>
 
       <div class="form-group">
-        <label for="location">location</label>
-        <input type="text" class="form-control" id="location" placeholder="City, State"
+        <input type="text" class="form-control" id="location" placeholder="Location (City, State)"
                [(ngModel)]="model.location" name="location">
       </div>
 
       <div class="form-group">
-        <label for="date">date</label>
-        <input type="text" class="form-control" id="date" placeholder="ex: January 1, 2000"
+        <input type="text" class="form-control" id="date" placeholder="Date (ex: January 1, 2000)"
                [(ngModel)]="model.date" name="date">
       </div>
       <br />

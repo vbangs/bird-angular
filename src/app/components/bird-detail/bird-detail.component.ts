@@ -29,14 +29,14 @@ export class BirdDetailComponent implements OnInit {
       .subscribe(bird => this.bird = bird);
   }
 
-  goBack(): void {
+  saveAndGoBack(): void {
     this.location.back();
   }
 
   delete() {
     if (this.bird) {
       this.birdService.deleteBird(this.bird.id);
-      this.goBack();
+      this.saveAndGoBack();
     }
     
   }

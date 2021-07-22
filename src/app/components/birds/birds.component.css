@@ -4,7 +4,7 @@ h2 {
     font-size: 30px;
     color: #333;
     text-align: center;
-    padding: 10% 10px 10px 10px;
+    padding: 15% 10px 30px 10px;
 }
 
 .birds {
@@ -23,7 +23,7 @@ h2 {
     left: .1em;
   }
   
-  .birds a {
+  .birds .list {
     color: #fff;
     text-decoration: none;
     background-color: #d84a4a;
@@ -36,12 +36,26 @@ h2 {
     text-align: center;
   }
   
-  .birds a:hover {
+  .birds .list:hover {
     color: #fff;
     background-color: #913636;
   }
   
-  .birds a:active {
+  .birds .list:active {
     background-color: #525252;
     color: #fafafa;
+  }
+
+  .btn {
+    background-color: rgb(226, 222, 209);
+    padding: 15px;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: 'Roboto Slab', serif;
+    color: #3d3d3d;
+    margin: 5% 38.25% auto 38.25%;
+  }
+  .btn:hover {
+    color: white;
+    background-color: #799999;
   }

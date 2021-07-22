@@ -1,8 +1,11 @@
 <h2>my list</h2>
 <ul class="birds">
   <li *ngFor="let bird of birds">
-    <a routerLink="/bird-detail/{{bird.id}}">
+    <a class="list" routerLink="/bird-detail/{{bird.id}}">
       {{bird.name | lowercase}}
     </a>
   </li>
+  <br />
+  <br />
+  <a routerLink="/add-bird"><button class="btn btn-success" > add bird </button></a>
 </ul>

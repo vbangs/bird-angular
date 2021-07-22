@@ -6,8 +6,12 @@ h1 {
   font-family: 'Roboto Slab', serif;
   color: #333;
   }
+.footer {
+  background-color: rgb(226, 222, 209);
+  font-family: 'Roboto Slab', serif;
+}
   nav a {
-    margin: auto auto;
+    /* margin: auto auto; */
     padding: 1rem;
     text-decoration: none;
     text-align: center;
@@ -17,7 +21,6 @@ h1 {
     border-radius: 4px;
     font-family: 'Roboto Slab', serif;
   }
-  
   nav .b:hover {
     color: white;
     background-color: #d84a4a;
@@ -25,22 +28,13 @@ h1 {
   nav .b.active {
     background-color: #333;;
   }
-
   nav .dash:hover {
     color: white;
     background-color: #799999;
   }
-
   nav .dash.active {
     background-color: #333;;
   }
-
-  #start {
-    font-family: 'Roboto Slab', serif;
-    font-size: 80px;
-    padding: 30% 10px 0px 10px;
-  }
-
-  #start-sub {
-    font-size: 40px;
+  .pic {
+    margin: auto auto auto 1%;
   }
