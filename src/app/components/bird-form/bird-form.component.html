@@ -1,10 +1,9 @@
 <div class="container">
   <div [hidden]="submitted">
-    <h1>Bird Form</h1>
     <form (ngSubmit)="onSubmit()" #birdForm="ngForm">
       <div class="form-group">
-        <label for="name">Name</label>
-        <input type="text" class="form-control" id="name"
+        <label for="name">bird</label>
+        <input type="text" class="form-control" id="name" placeholder="ex: American Widgeon"
                required
                [(ngModel)]="model.name" name="name"
                #name="ngModel">
@@ -15,144 +14,25 @@
       </div>
 
       <div class="form-group">
-        <label for="birdtype">Bird Type</label>
-        <select class="form-control" id="birdtype"
+        <label for="birdtype">type</label>
+        <select class="form-control" id="birdtype" placeholder="type"
                 required
                 [(ngModel)]="model.birdtype" name="birdtype"
-                #power="ngModel">
-          <option *ngFor="let bird of birdtype" [value]="birdtype">{{bird}}</option>
+                #type="ngModel">
+          <option *ngFor="let bird of birdtype" [value]="bird">{{bird}}</option>
         </select>
-        <!-- <div [hidden]="birdtype.valid || birdtype.pristine" class="alert alert-danger">
-          Type is required
-        </div> -->
       </div>
 
       <div class="form-group">
-        <label for="location">Location</label>
-        <input type="text" class="form-control" id="location"
+        <label for="location">location</label>
+        <input type="text" class="form-control" id="location" placeholder="City, State"
                [(ngModel)]="model.location" name="location">
       </div>
 
       <div class="form-group">
-        <label for="date">Date</label>
-        <input type="text" class="form-control" id="date"
+        <label for="date">date</label>
+        <input type="text" class="form-control" id="date" placeholder="ex: January 1, 2000"
                [(ngModel)]="model.date" name="date">
       </div>
-
-      <button type="submit" class="btn btn-success" [disabled]="!birdForm.form.valid">Submit</button>
-      <button type="button" class="btn btn-default" (click)="newBird(); birdForm.reset()">New Bird</button>
-      <i>with</i> reset
-
-      &nbsp;&nbsp;
-      <button type="button" class="btn btn-default" (click)="newBird()">New Bird</button>
-      <i>without</i> reset
-
-     <!-- NOT SHOWN IN DOCS -->
-      <div>
-        <hr>
-        Name via form.controls = {{showFormControls(birdForm)}}
-      </div>
-     <!-- - -->
-    </form>
-  </div>
-
-  <div [hidden]="!submitted">
-    <h2>You submitted the following:</h2>
-    <div class="row">
-      <div class="col-xs-3">Name</div>
-      <div class="col-xs-9">{{ model.name }}</div>
-    </div>
-    <div class="row">
-      <div class="col-xs-3">Type</div>
-      <div class="col-xs-9">{{ model.birdtype }}</div>
-    </div>
-    <div class="row">
-      <div class="col-xs-3">Location</div>
-      <div class="col-xs-9">{{ model.location }}</div>
-    </div>
-    <div class="row">
-      <div class="col-xs-3">Date</div>
-      <div class="col-xs-9">{{ model.date }}</div>
-    </div>
-    <br>
-    <button class="btn btn-primary" (click)="submitted=false">Edit</button>
-  </div>
-</div>
-
-<!-- ====================================================  -->
-  <div>
-    <form>
-
-       <!-- ... all of the form ... -->
-
-    </form>
-  </div>
-
-<!-- ====================================================  -->
-<hr>
-<div class="no-style" style="margin-left: 4px">
-  <div class="container">
-      <h1>Bird Form</h1>
-      <form>
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" class="form-control" id="name" required>
-        </div>
-
-        <div class="form-group">
-          <label for="birdtype">Type</label>
-          <input type="text" class="form-control" id="birdType">
-        </div>
-
-        <div class="form-group">
-          <label for="location">Location</label>
-          <input type="text" class="form-control" id="location">
-        </div>
-
-        <div class="form-group">
-          <label for="date">Date</label>
-          <input type="text" class="form-control" id="date">
-        </div>
-
-        <button type="submit" class="btn btn-success">Submit</button>
-
-      </form>
-  </div>
-
-  <!-- ====================================================  -->
-  <hr>
-  <div class="container">
-      <h1>Bird Form</h1>
-      <form #birdForm="ngForm">
-        {{ model | json }}
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input type="text" class="form-control" id="name"
-                 required
-                 [(ngModel)]="model.name" name="name">
-        </div>
-
-        <div class="form-group">
-          <label for="birdtype">Type</label>
-          <input type="text"  class="form-control" id="birdtype"
-                 [(ngModel)]="model.birdtype" name="birdtype">
-        </div>
-
-        <button type="submit" class="btn btn-success">Submit</button>
-
-      </form>
-  </div>
-
-  <!-- EXTRA MATERIAL FOR DOCUMENTATION -->
-  <hr>
-    <input type="text" class="form-control" id="name"
-           required
-           [(ngModel)]="model.name" name="name">
-    TODO: remove this: {{model.name}}
-  <hr>
-    <input type="text" class="form-control" id="name"
-           required
-           [ngModel]="model.name" name="name"
-           (ngModelChange)="model.name = $event">
-    TODO: remove this: {{model.name}}
-</div>
+      <br />
+      <button type="submit" class="btn btn-success">Submit</button>

@@ -30,9 +30,13 @@ label {
     font-family: 'Roboto Slab', serif;
     color: #3d3d3d;
   }
-  button:hover {
+  .d:hover {
     color: white;
     background-color: #d84a4a;
+  }
+  .back:hover {
+    color: white;
+    background-color: #799999;
   }
   button:disabled {
     background-color: #eee;

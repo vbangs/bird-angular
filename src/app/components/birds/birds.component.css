@@ -8,7 +8,7 @@ h2 {
 }
 
 .birds {
-    margin: auto auto;
+    margin: auto auto 25% auto;
     list-style-type: none;
     padding: 0;
     width: 50%;

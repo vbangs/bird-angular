@@ -5,3 +5,20 @@
     .no-style .ng-invalid {
     border-left: 1px  solid #CCC
   }
+
+  .container {
+    margin: 3% auto;
+    text-align: center;
+  }
+  label {
+      color: #3d3d3d;
+      font-weight: bold;
+      font-family: 'Roboto Slab', serif;
+      font-size: 20px;
+    }
+  
+    .form-group {
+      font-size: 17px;
+      padding: 5px;
+      margin: auto 30%;
+    }

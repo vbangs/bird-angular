@@ -32,4 +32,12 @@ export class BirdDetailComponent implements OnInit {
   goBack(): void {
     this.location.back();
   }
+
+  delete() {
+    if (this.bird) {
+      this.birdService.deleteBird(this.bird.id);
+      this.goBack();
+    }
+    
+  }
 }

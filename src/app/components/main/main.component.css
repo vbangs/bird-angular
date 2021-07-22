@@ -35,7 +35,6 @@ h2 {
     font-family: 'Roboto Slab', serif;
     border-radius: 4px;
   
-    /* flexbox */
     order: 0;
     flex: 0 1 auto;
     align-self: auto;

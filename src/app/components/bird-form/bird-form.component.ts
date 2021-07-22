@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 import { Bird } from 'src/app/bird';
+import { BirdService } from 'src/app/bird.service';
 
 @Component({
   selector: 'app-bird-form',
@@ -14,11 +15,16 @@ export class BirdFormComponent {
     'Sandpiper-like Birds', 'Pigeon-like Birds', 'Chicken-like Marsh Birds', 'Swallow-like Birds',
     'Perching Birds', 'Owls', 'Tree-Clinging Birds']
 
-  model = new Bird(20, 'Carolina Chickadee', this.birdtype[0], 'Burlington', 'March 1, 2021');
+  model = new Bird(20, '', this.birdtype[0], '', '');
 
   submitted = false;
 
-  onSubmit() { this.submitted = true; }
+  constructor(private birdService: BirdService){}
+
+  onSubmit() { 
+    this.submitted = true; 
+    this.birdService.addBird(this.model);
+  }
 
 
   newBird() {
@@ -28,7 +34,7 @@ export class BirdFormComponent {
   beltedKingfisher(): Bird {
     const myBird =  new Bird(42, 'Belted Kingfisher',
                            'Perching Birds',
-                           'Plymouth');
+                           'Plymouth', '');
     console.log('My bird is called ' + myBird.name);
     return myBird;
   }
@@ -38,5 +44,7 @@ export class BirdFormComponent {
     return form && form.controls.name &&
     form.controls.name.value;
   }
+
+
 
 }
