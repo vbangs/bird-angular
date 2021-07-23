@@ -9,12 +9,31 @@
     padding: 20% 10px 0px 0px;
     color: #333;
   }
-  .subtitle {
-  margin: 0 0 20% 0;
-  }
   .binoculars {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+  }
+
+  @media only screen 
+  and (device-width : 375px) 
+  and (device-height : 812px) 
+  and (-webkit-device-pixel-ratio : 3) {
+    #start {
+      font-size: 50px;
+      margin: 10%
+    }
+    h2 {
+      font-size: 20px;
+    }
+    .binoculars {
+      /* display: block; */
+      margin-left: auto;
+      margin-right: auto;
+      width: 70%;
+    }
+  }
+  .subtitle {
+  margin: 0 0 20% 0;
   }

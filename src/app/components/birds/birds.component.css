@@ -13,6 +13,7 @@ h2 {
     padding: 0;
     width: 50%;
     max-width: 400px;
+    min-width: 330px;
   }
   .birds li {
     position: relative;
@@ -58,4 +59,19 @@ h2 {
   .btn:hover {
     color: white;
     background-color: #799999;
+  }
+
+  @media only screen 
+  and (device-width : 375px) 
+  and (device-height : 812px) 
+  and (-webkit-device-pixel-ratio : 3) {
+    .birds {
+      margin: auto 4%;
+      max-width: 400px;
+      min-width: 330px;
+    }
+    .btn {
+      font-size: 1rem;
+      margin: 5% auto auto 38%;
+    }
   }
