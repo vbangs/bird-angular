@@ -63,4 +63,8 @@ h2 {
         margin: auto 5%;
         max-width: 400px;
       }
+      .btn {
+        color: white;
+        background-color: #799999;
+      }
     }

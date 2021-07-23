@@ -20,6 +20,7 @@ label {
   input {
     font-size: 17px;
     padding: 5px;
+    border-radius: 4px;
   }
   button {
     margin-top: 20px;
@@ -45,4 +46,23 @@ label {
     background-color: #eee;
     color: #ccc;
     cursor: auto;
+  }
+  input:hover {
+    border: 4px solid #799999;
+  }
+
+  @media only screen 
+  and (device-width : 375px) 
+  and (device-height : 812px) 
+  and (-webkit-device-pixel-ratio : 3) {
+    .d {
+      color: white;
+      background-color: #d84a4a;
+      margin: 0 auto;
+    }
+    .back {
+      margin: 15% auto;
+      color: white;
+      background-color: #799999;
+    }
   }
