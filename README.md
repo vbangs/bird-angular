@@ -1,27 +1,46 @@
-# BirdAngular
+# big year
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.1.1.
+**Author:** Veronica Bangs
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Project Summary
+Big Year is an Angular app that allows users to keep track of their birding lists.  Users may add birds to their lists and edit or delete birds from their lists.
+<br></br>
 
-## Code scaffolding
+<img width="802" alt="Screen Shot 2021-07-23 at 11 45 20 AM" src="https://user-images.githubusercontent.com/77699407/126810913-c71ae6ee-cadf-4cb8-af08-6e5619c3712b.png"><br></br>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<img width="802" alt="Screen Shot 2021-07-23 at 11 47 25 AM" src="https://user-images.githubusercontent.com/77699407/126810952-a7bab503-aba2-4e34-be89-ccd35fbf7303.png"><br></br>
 
-## Build
+<img width="802" alt="Screen Shot 2021-07-23 at 11 48 18 AM" src="https://user-images.githubusercontent.com/77699407/126810990-41648a30-be46-4773-a66c-51c6270436d4.png"><br></br>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+<img width="802" alt="Screen Shot 2021-07-23 at 11 51 20 AM" src="https://user-images.githubusercontent.com/77699407/126811027-94c07b77-39ff-4ca0-a440-ac9565c39e68.png"><br></br>
 
-## Running unit tests
+<img width="802" alt="Screen Shot 2021-07-23 at 12 17 06 PM" src="https://user-images.githubusercontent.com/77699407/126811623-cc9874f8-e9cd-4e4f-b63b-44df4c516920.png"><br></br>
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Technology Used
+Angular </br>
+TypeScript </br>
+JavaScript </br>
+HTML </br>
+CSS </br>
+Bulma </br>
+Boostrap </br>
+GitHub Pages </br>
+
+
+</br>
+
+## Future Plans
+- Continue working on responsive design.  The layout appears to be responsive when using DevTools but will not render accordingly on mobile devices.
+
+- Add user authorization and authentication.
+
+<br></br>
+
+
+**Link to Live Site:** https://vbangs.github.io/bird-angular/bigyear

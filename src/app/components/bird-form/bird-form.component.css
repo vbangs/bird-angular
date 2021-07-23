@@ -17,7 +17,7 @@ h2 {
       max-width: 400px;
     }
     input {
-      background-color: rgb(226, 222, 209);
+      background-color: white;
       font-family: 'Roboto Slab', serif;
       border-radius: 4px;
       height: 40px;
@@ -25,7 +25,7 @@ h2 {
       font-size: 16px;
     }
     select {
-      background-color: rgb(226, 222, 209);
+      background-color: white;
       font-family: 'Roboto Slab', serif;
       border-radius: 4px;
       height: 40px;
@@ -40,7 +40,7 @@ h2 {
       font-size: 1rem;
       font-family: 'Roboto Slab', serif;
       color: #3d3d3d;
-      margin: 5% 38.25% auto 38.25%;
+      margin: 5% 38.25% 20% 38.25%;
     }
     .btn:hover {
       color: white;
